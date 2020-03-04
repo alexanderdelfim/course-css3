@@ -8,14 +8,28 @@
                 background-color:#EFEFEF;
             }
 
-            #principal {
-                width:600px;
-                margin:0 auto;
-                background-color:#9C3;
+            body {
+                margin: 0;
             }
 
-            #janela {
+            #principal {
+                width:620px;
+                margin:0 auto;
+                background-color:#9C3;
+                padding: 5px;
+            }
+
+            #principal::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .janela {
+                float: left;
+                margin: 5px;
                 width:300px;
+                background: #ffcc33;
             }
 
             p {
@@ -27,7 +41,10 @@
 <body>
 	
     <div id="principal">
-    	<div id="janela">
+    	<div class="janela">
+	        <p>Cafe Townsend's visionary chef leads the way in a culinary revolution. Proclaimed by many to be the best chef in the world today, Chef Bienni blends earthy seasonal flavors and bold ingredients to create exquisite contemporary cuisine. </p>    
+        </div>
+        <div class="janela">
 	        <p>Cafe Townsend's visionary chef leads the way in a culinary revolution. Proclaimed by many to be the best chef in the world today, Chef Bienni blends earthy seasonal flavors and bold ingredients to create exquisite contemporary cuisine. </p>    
         </div>
     </div>
